@@ -1,0 +1,21 @@
+{
+    "version": "0.1",
+    "name": "Robertson Library Sensors",
+    "description": "Live data from sensors inside Special Collections at Robertson Library.",
+    "launch_path": "/index.html",
+    "icons": {
+        "16": "/img/icons/roblib-16.png",
+        "48": "/img/icons/roblib-48.png",
+        "128": "/img/icons/roblib-128.png"
+    },
+    "developer": {
+        "name": "Peter Rukavina",
+        "url": "http://ruk.ca/app/roblib"
+    },
+    "installs_allowed_from": ["*"],
+    "default_locale": "en",
+    "type": "privileged",
+    "permissions": {
+        "systemXHR": { "description": "Required for certain web communications" }
+    }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Robertson Library Sensors</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Live data from sensors inside Special Collections at Robertson Library.">
+		<meta name="author" content="Peter Rukavina">
+		<link href="css/index.css" rel="stylesheet">
+		<link href="css/headers.css" rel="stylesheet">
+		<link href="css/lists.css" rel="stylesheet">
+		<link href="css/buttons.css" rel="stylesheet">
+		<link href="css/progress_activity.css" rel="stylesheet">
+		<link href="css/cross_browser.css" rel="stylesheet">
+		<link href="css/util.css" rel="stylesheet">
+		<link href="css/responsive.css" rel="stylesheet">
+  </head>
+	<body>
+		<section role="region">
+			<header>
+				<h1>Library Sensors</h1>
+			</header>
+		</section>
+		<section data-type="list">
+			<ul>
+				<li>
+					<aside class="pack-end">
+						<p id="temp"></p>
+					</aside>
+					<p>Temperature</p>
+				</li>
+				<li>
+					<aside class="pack-end">
+						<p id="hum"></p>
+					</aside>
+					<p>Humidity</p>
+				</li>
+				<li>
+					<aside class="pack-end">
+						<p id="co"></p>
+					</aside>
+					<p>CO</p>
+				</li>
+				<li>
+					<aside class="pack-end">
+						<p id="no2"></p>
+					</aside>
+					<p>NO2</p>
+				</li>
+				<li>
+					<aside class="pack-end">
+						<p id="noise"></p>
+					</aside>
+					<p>Noise</p>
+				</li>
+				<li>
+					<aside class="pack-end">
+						<p id="light"></p>
+					</aside>
+					<p>Light</p>
+				</li>		
+			</ul>
+			<button class="recommend" style="display: none" id="refresh">Refresh</button>
+		<progress id="refreshing" style="display: none"></progress>
+		</section>
+		<script src="js/zepto.min.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+</html>
