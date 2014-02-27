@@ -1,16 +1,16 @@
 {
     "version": "0.1",
-    "name": "Robertson Library Sensors",
-    "description": "Live data from sensors inside Special Collections at Robertson Library.",
+    "name": "View Sensors",
+    "description": "Live data from Smart Citizen sensors.",
     "launch_path": "/index.html",
     "icons": {
-        "16": "/img/icons/roblib-16.png",
-        "48": "/img/icons/roblib-48.png",
-        "128": "/img/icons/roblib-128.png"
+        "16": "/icons/viewsensors-16.png",
+        "48": "/icons/viewsensors-48.png",
+        "128": "/icons/viewsensors-128.png"
     },
     "developer": {
         "name": "Peter Rukavina",
-        "url": "http://ruk.ca/app/roblib"
+        "url": "http://ruk.ca/app/viewsensors"
     },
     "installs_allowed_from": ["*"],
     "default_locale": "en",

@@ -1,9 +1,9 @@
-![image](www/img/icons/roblib-128.png)
+![image](www/img/icons/viewsensors-128.png)
 
-roblib
-======
+View Sensors
+============
 
-This is an open web app, targetted at Firefox OS and tested initially on the Geeksphone Peak, that displays live data from the Smart Citizen Kit sensors in the Special Collections room at Robertson Library, University of Prince Edward Island.
+This is an open web app, targetted at Firefox OS and tested initially on the Geeksphone Peak, that displays live data from Smart Citizen Kit sensors.
 
 How to Install
 --------------

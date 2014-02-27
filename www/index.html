@@ -2,68 +2,76 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Robertson Library Sensors</title>
+		<title>View Sensors</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="Live data from sensors inside Special Collections at Robertson Library.">
+		<meta name="description" content="Live data from sensors Smart Citizen sensors.">
 		<meta name="author" content="Peter Rukavina">
-		<link href="css/index.css" rel="stylesheet">
-		<link href="css/headers.css" rel="stylesheet">
-		<link href="css/lists.css" rel="stylesheet">
-		<link href="css/buttons.css" rel="stylesheet">
-		<link href="css/progress_activity.css" rel="stylesheet">
-		<link href="css/cross_browser.css" rel="stylesheet">
-		<link href="css/util.css" rel="stylesheet">
-		<link href="css/responsive.css" rel="stylesheet">
-  </head>
-	<body>
-		<section role="region">
-			<header>
-				<h1>Library Sensors</h1>
-			</header>
-		</section>
-		<section data-type="list">
-			<ul>
+		<link href="style/jquery.mobile-1.3.2.min.css"rel="stylesheet">
+		<link href="style/index.css" rel="stylesheet">
+	</head>
+	<body role="application">
+
+		<div data-role="page" id="list-view">
+			<div data-role="header">
+				<button id="refresh" data-icon="refresh">Refresh</button>
+				<h1>Sensors</h1>
+				<a id="settings-btn" href="#settings-view" data-icon="gear" class="ui-btn-right">Settings</a>
+			</div>
+			<div id="status"></div>
+			<ul data-role="listview" data-inset="true" data-count-theme="e" id="sensor_list">
 				<li>
-					<aside class="pack-end">
-						<p id="temp"></p>
-					</aside>
-					<p>Temperature</p>
+					<h2 id="timestamp"></h2>
 				</li>
 				<li>
-					<aside class="pack-end">
-						<p id="hum"></p>
-					</aside>
-					<p>Humidity</p>
+					<h2>Temperature</h2>
+					<p class="ui-li-aside" id="temp"></p>
 				</li>
 				<li>
-					<aside class="pack-end">
-						<p id="co"></p>
-					</aside>
-					<p>CO</p>
+					<h2>Humidity</h2>
+					<p class="ui-li-aside" id="hum"></p>
 				</li>
 				<li>
-					<aside class="pack-end">
-						<p id="no2"></p>
-					</aside>
-					<p>NO2</p>
+					<h2>CO</h2>
+					<p class="ui-li-aside" id="co"></p>
 				</li>
 				<li>
-					<aside class="pack-end">
-						<p id="noise"></p>
-					</aside>
-					<p>Noise</p>
+					<h2>NO2</h2>
+					<p class="ui-li-aside" id="no2"></p>
 				</li>
 				<li>
-					<aside class="pack-end">
-						<p id="light"></p>
-					</aside>
-					<p>Light</p>
+					<h2>Noise</h2>
+					<p class="ui-li-aside" id="noise"></p>
+				</li>
+				<li>
+					<h2>Light</h2>
+					<p class="ui-li-aside" id="light"></p>
+				</li>		
+				<li>
+					<h2>Battery Level</h2>
+					<p class="ui-li-aside" id="bat"></p>
+				</li>		
+				<li>
+					<h2>Wifi Networks</h2>
+					<p class="ui-li-aside" id="nets"></p>
 				</li>		
 			</ul>
-			<button class="recommend" style="display: none" id="refresh">Refresh</button>
-		<progress id="refreshing" style="display: none"></progress>
-		</section>
-		<script src="js/zepto.min.js"></script>
-		<script src="js/index.js"></script>
+		</div>
+		<div data-role="page" id="settings-view">
+			<div data-role="header">
+				<h1 data-l10n-id="settings">Settings</h1>
+				<button id="save-settings-btn" data-icon="check" class="ui-btn-right">Save</button>
+			</div>
+			<ul data-role="listview" data-inset="true" data-count-theme="e">
+				<li data-role="list-divider">Smart Citizen API Key</li>
+				<li>
+					<input x-inputmode="verbatim" spellcheck="false" name="api_key" id="api_key" placeholder="API Key" value="" type="text"></td>
+				</li>
+			</article>
+		</div>			
+		
+		<!-- Why are the JavaScripts down here?  Check out http://developer.yahoo.com/blogs/ydn/high-performance-sites-rule-6-move-scripts-bottom-7200.html -->
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<script src="js/jquery.mobile-1.3.2.min.js"></script>
+		<script src="js/index.js"></script><!-- Local JavaScript. The guts of the app are in here. -->
 	</body>
 </html>
