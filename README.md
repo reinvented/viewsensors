@@ -1,4 +1,4 @@
-![image](www/img/icons/viewsensors-128.png)
+![image](www/icons/viewsensors-128.png)
 
 View Sensors
 ============
@@ -17,7 +17,12 @@ To install from source:
 How to Configure
 ----------------
 
-There is no configuration: as soon as you launch the app it should pull data from your network and display it.
+When the app first launches you'll be prompted to enter your Smart Citizen API key, which you can [get for free here](http://smartcitizen.me/). Enter it, tap Save, and data from your sensor should be displayed.
+
+Todo
+----
+
+ * Handle situations where there is more than one sensor attached to a Smart Citizen API key (right now only the first sensor's data is returned and displayed)
 
 Credits
 -------
